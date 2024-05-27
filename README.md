@@ -1,9 +1,14 @@
 # AssemblerProject
 
+## summery
+This project is made up Assembler for **imaginary** Assembly. The input to the assembler is filse with the imaginary Assembly code, and the Assembler decoding the file and outputing the code in Base64(not Binary).
 
-This project is based on the two-pass assembler model.<br />
-**Note:** the computer model for this project and the given assembly language are **imaginary**.<br />
+This project is based on the two-pass assembler model.
+**Note:** the computer model for this project and the given assembly language are **imaginary**.
 
+## Getting Started
+
+The project was coded and compiled using Ubuntu, but it may run on all Linux versions.
 
 ### Usage
 
@@ -19,7 +24,7 @@ As for the files x.as, y.as, hello.as we will run:
 >   assembler x y hello
 ```
 The assembler will generate output files with the same filenames and the following extensions:  
-- `.am` - 
+- `.am` - Temporary file, the input file after layouting the `macros`.
 - `.ob` - Object file
 - `.ent` - Entries file
 - `.ext` - Externals file
@@ -80,10 +85,13 @@ A **_directive_** line of the following structure:
 
    ### `macro`
    Macros are pieces of code that include statements. in the program you can define a macro and use it in different places in the program. The use of the macro from a certain place in the program will cause the macro to be deployed to that place.
-   e.g. `macro m1
-            inc r1
-            mov A,r2
-         endmacro`.
+   e.g.
+   ```
+   macro m1
+      inc r1
+      ov A,r2
+   endmacro.
+   ```
        
    ### `.data`
    This directive allocates memory in the data image for storing received integers later in memory (also increases the _data counter_ and updates the _symbol table_).
