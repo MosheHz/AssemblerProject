@@ -1,7 +1,7 @@
 # AssemblerProject
 
 
-This project is based on the two-pass assembler model.
+This project is based on the two-pass assembler model.\n
 Note: the computer model for this project and the given assembly language are imaginary.
 
 
