@@ -3,8 +3,8 @@
 ## summery
 This project is made up Assembler for **imaginary** Assembly. The input to the assembler is filse with the imaginary Assembly code, and the Assembler decoding the file and outputing the code in Base64(not Binary).
 
-This project is based on the two-pass assembler model.
-**Note:** the computer model for this project and the given assembly language are **imaginary**.
+This project is based on the two-pass assembler model.<br />
+**Note:** the computer model for this project and the given assembly language are **imaginary**.<br />
 
 ## Getting Started
 
