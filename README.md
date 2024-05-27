@@ -80,7 +80,10 @@ A **_directive_** line of the following structure:
 
    ### `macro`
    Macros are pieces of code that include statements. in the program you can define a macro and use it in different places in the program. The use of the macro from a certain place in the program will cause the macro to be deployed to that place.
-   e.g. `macro m1<br />&emsp;&emsp;inc r1<br />&emsp;&emsp; mov A,r2<br />&emsp;endmacro`.
+   e.g. `macro m1
+            inc r1
+            mov A,r2
+         endmacro`.
        
    ### `.data`
    This directive allocates memory in the data image for storing received integers later in memory (also increases the _data counter_ and updates the _symbol table_).
@@ -103,7 +106,7 @@ A **_directive_** line of the following structure:
    This directive receives a name of a *label* as a parameter and declares the *label* as being external (defined in another file) and that the current file shall use it.  
    This way, the directive `.extern HELLO` in `file2.as` will match the `.entry` directive in the previous example.
 
-## OutPut files
-- `.ob` - Object file - The InPut files encoded using the Base64 method
+## Output files
+- `.ob` - Object file - The Input files encoded using the Base64 method
 - `.ent` - Entries file - contains details on each symbol that is declared as an entry point (a symbol that appeared as an operand of the entry directive, and is characterized in the symbol table as entry).
 - `.ext` - Externals file - contains details of all the places (addresses) in the machine code where there is an information word that encodes a value of a symbol declared as external (a symbol that appeared as an operand of the extern directive, and is characterized in the external symbol table)
