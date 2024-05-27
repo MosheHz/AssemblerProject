@@ -1,5 +1,11 @@
 # AssemblerProject
 
+
+This project is based on the two-pass assembler model.
+Note: the computer model for this project and the given assembly language are imaginary.
+
+
+
 This project is an invented assembly language assembler.
 The program gets a files with invented assembly language code and checks the syntax.
 If non error occur in the file the program will create an 'object' file (.ob) with base 64 code representation,
